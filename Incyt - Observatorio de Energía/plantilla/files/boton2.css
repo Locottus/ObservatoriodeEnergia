@@ -1,0 +1,65 @@
+/**
+ * This style sheet changes different styles of chat bubbles.
+ * You can style the chat however you wish by making your own style sheet and importing it to your page.
+ */
+ 
+#botplatformboxbar, #botplatformchatboxbar {
+	display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+	width: 325px;
+	
+	padding: 0px;
+	background-color: transparent;
+	background-size: 500px;
+	  background:
+       url(https://i.ibb.co/Rcv4R5C/btonv1.jpg) no-repeat;
+	   right: -240px;
+	
+	
+}
+
+#botplatformchatboxbar2 {
+	display: inline;
+}
+
+.botplatformboxbar3, .botplatformchatboxbar3 {
+	display: inline;
+}
+
+#botplatformchatboxbar3 {
+	height: inherit;
+}
+
+#botplatformchatboxbarmax2 {
+	left: 900px;
+	bottom: 400px;
+	height: 300px;
+	width: 50px;
+	position: absolute;
+}
+
+#botplatformboxbar2 {
+	display: none;
+}
+
+#botplatformboxbarmax2 {
+	left: 7px;
+	bottom: 7px;
+	height: 50px;
+	width: 500px;
+	position: absolute;
+
+}
+
+#botplatformboxclose2, #botplatformchatboxclose2 {
+	opacity: 0.1;
+	position: fixed;
+	bottom: 4px;
+	right: 4px;
+}
+
+#botplatformboxclose2:hover, #botplatformchatboxclose2:hover {
+	opacity: 1.0;
+}

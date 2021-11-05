@@ -1,0 +1,42 @@
+<div style="display: flex; background-color: #144881 !important; padding-bottom: 10px;" class="notMobile">
+  <div *ngFor="let item of tabs" style="margin: 0 auto;padding: 5px;">
+    <button (click)="onChange(item.id)" class="buttonTableros btn" style="height: 42px; background-color: #146C86 !important; border: none; border-radius: 5px !important;">
+      {{ item.text }}
+    </button>
+  </div>
+</div>
+
+<div style="display: flex; background-color: #144881 !important;" class="mobile">
+  <div style="margin: 0 auto;padding: 5px;">
+    <div (click)="onChange(tabs[0].id)" class="buttonTablerosMobile" style="height: 45px; width: 45vw; padding-top: 7px;">
+        {{ tabs[0].text }}
+    </div>
+    <div (click)="onChange(tabs[1].id)" class="buttonTablerosMobile" style="height: 45px; width: 45vw; padding-top: 7px;">
+        {{ tabs[1].text }}
+    </div>
+  </div>
+  <div style="margin: 0 auto;padding: 5px;">
+    <div (click)="onChange(tabs[3].id)" class="buttonTablerosMobile" style="height: 45px; width: 45vw; padding-top: 7px;">
+      {{ tabs[3].text }}
+    </div>
+    <div (click)="onChange(tabs[2].id)" class="buttonTablerosMobile" style="height: 45px; width: 45vw; padding-top: 7px;">
+        {{ tabs[2].text }}
+    </div>
+  </div>
+</div>
+
+<div class="group-cuerpo field-group-div" id="iframe1" *ngIf="active == 1">
+  <iframe src="https://www.arcgis.com/apps/dashboards/4e048cac24ba45899880ec02fbaa3366" style="border:0px #ffffff none; width: 100%; height: 100vh;" name="myiFrame" scrolling="yes" frameborder="1"></iframe>
+</div>  
+
+<div class="group-cuerpo field-group-div" id="iframe2" *ngIf="active == 2">
+  <iframe src="https://www.arcgis.com/apps/dashboards/c4c4841de27f42ba9fc33503b4430034" style="border:0px #ffffff none; width: 100%; height: 100vh;" name="myiFrame" scrolling="yes" frameborder="1"></iframe>
+</div>  
+
+<div class="group-cuerpo field-group-div" id="iframe3" *ngIf="active == 3">
+  <iframe src="https://www.arcgis.com/apps/dashboards/87c36a7a24724e5289250e13beeb280d" style="border:0px #ffffff none; width: 100%; height: 100vh;" name="myiFrame" scrolling="yes" frameborder="1"></iframe>
+</div>  
+
+<div class="group-cuerpo field-group-div" id="iframe4" *ngIf="active == 4">
+  <iframe src="https://www.arcgis.com/apps/dashboards/a9a8e65324c8484daef965fec1809f16" style="border:0px #ffffff none; width: 100%; height: 100vh;" name="myiFrame" scrolling="yes" frameborder="1"></iframe>
+</div>
